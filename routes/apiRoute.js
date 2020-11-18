@@ -1,3 +1,4 @@
+// Placed dependencies here
 const express = require('express');
 const fs = require('fs');
 const { uuid } = require('uuidv4');
@@ -7,7 +8,7 @@ const router = express.Router();
 router.get("/notes", function (req, res) {
     res.json(theNotes);
 });
-
+// Posting
 router.post("/notes", function (req, res) {
 
     const data = req.body;
@@ -20,7 +21,7 @@ router.post("/notes", function (req, res) {
     });
     res.json(true)
 });
-
+// Deletion
 router.delete("/notes/:id", function (req, res) {
 
     const setID = req.params.id;

@@ -1,4 +1,4 @@
-//Dependencies
+// Placed dependencies up here
 const express = require("express");
 const routeAPI = require("./routes/apiRoute");
 const routeHTML = require("./routes/htmlRoute");
